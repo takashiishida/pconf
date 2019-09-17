@@ -92,7 +92,7 @@ def supervisedClassification(num_epochs, lr, x_train, x_test, y_train, y_test):
 def generateData(mu1, mu2, cov1, cov2, n_positive, n_negative, n_positive_test, n_negative_test):
     positive_prior = n_positive/(n_positive + n_negative)
     x_train_p = np.random.multivariate_normal(mu1, cov1, n_positive)
-    x_train_n = np.random.multivariate_normal(mu2, cov2, n_positive)
+    x_train_n = np.random.multivariate_normal(mu2, cov2, n_negative)
     x_test_p = np.random.multivariate_normal(mu1, cov1, n_positive_test)
     x_test_n = np.random.multivariate_normal(mu2, cov2, n_negative_test)
     x_naive = np.r_[x_train_p, x_train_p]
