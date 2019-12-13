@@ -41,7 +41,7 @@ def pconfClassification(num_epochs, lr, x_train_p, x_test, y_test, r):
         optimizer.zero_grad()
         negative_logistic = nn.LogSigmoid()
         logistic = -1. * negative_logistic(-1. * model(inputs))
-        loss = torch.sum(-model(inputs)+logistic * 1. / confidence)  # note that \ell_L(g) + \ell_L(-g) = -g with logistic loss
+        loss = torch.sum(-model(inputs)+logistic * 1. / confidence)  # note that \ell_L(g) - \ell_L(-g) = -g with logistic loss
         loss.backward()
         optimizer.step()
     params = list(model.parameters())
