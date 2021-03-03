@@ -3,8 +3,6 @@
 import torch
 import torch.nn as nn
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib
 from torch.autograd import Variable
 import torch.optim as optim
 from sklearn import svm
