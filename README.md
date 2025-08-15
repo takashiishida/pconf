@@ -1,5 +1,10 @@
 # Positive-Confidence (Pconf) Classification
 
+[![NeurIPS 2018](https://img.shields.io/badge/NeurIPS-2018-blue.svg)](https://arxiv.org/abs/1710.07138)
+[![Poster](https://img.shields.io/badge/Poster-PDF-orange.svg)](https://takashiishida.github.io/assets/pdfs/pconf-poster.pdf)
+[![Slides](https://img.shields.io/badge/Slides-PDF-green.svg)](https://takashiishida.github.io/assets/pdfs/spotlight_slides.pdf)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 This repository gives the implementation for Positive-Confidence (Pconf) classification that was proposed in the paper *"Binary Classification from Positive-Confidence Data"* (NeurIPS 2018).
 
 ## Implementation
@@ -32,10 +37,3 @@ For the details, please see the paper [here](https://arxiv.org/abs/1710.07138).
 	year = {2018}
 }
 ```
-You can also see some of our other materials below:
-
-- [**YouTube video**: 3 minute video explaining the main idea of Pconf classification](https://youtu.be/2BpJcOf-1XA)
-- [**Poster**: used for poster presentation at NeurIPS 2018](./poster.pdf)
-- [**Slides**: used for spotlight presentation at NeurIPS 2018](./spotlight_slides.pdf)
-
-If you have any further questions, please feel free to send an e-mail to ishida at ms.k.u-tokyo.ac.jp.
